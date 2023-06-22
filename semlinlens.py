@@ -194,6 +194,12 @@ class lens:
         htmp = p[1]
         b,h = self.procparms(eta,btmp,htmp)
         self.tau = self.tau0/h
+        
+        # make sure parameters stay in bounds
+        if eta<0.1 or eta>1.9:
+            return -1.0e8
+        if h<0.0 or h>2.0:
+            return -1.0e8
 
         r = np.linalg.norm(self.xarr,axis=1)
         r1,r2 = r
@@ -587,7 +593,7 @@ class lens:
             ec = np.random.normal(scale=0.1)
             es = np.random.normal(scale=0.1)
             # check eta in the specified range
-            eta = np.random.uniform(low=eta_range[0],high=eta_range[1])
+            eta = np.random.uniform(low=eta_range[0],high=eta_range[1]) # eta range is used to limit the initial guess
             # guess b from eta and ravg
             b = ravg**(2.0-eta)
             # always guess h = 0.7
