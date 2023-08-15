@@ -1,6 +1,6 @@
 # paper-h-powlaw
 
-Code that compliments the paper: (in prep). I don't write code in the most optimal way, but this is meant to demonstrate how we did our Markov Chain Monte Carlo analysis.
+Code that compliments the paper: (in prep), meant to demonstrate how we did our Markov Chain Monte Carlo analysis.
 
 The mock lens systems are generated with <a href="https://github.com/chuckkeeton/pygravlens">pygravlens</a>, a python version of <a href="https://www.physics.rutgers.edu/~keeton/gravlens/2012WS/">lensmodel</a>, written by Chuck Keeton. You can install pygravlens through the linked GitHub page.
 
