@@ -4,7 +4,7 @@ Code that compliments the paper: (in prep). I don't write code in the most optim
 
 The mock lens systems are generated with <a href="https://github.com/chuckkeeton/pygravlens">pygravlens</a>, a python version of <a href="https://www.physics.rutgers.edu/~keeton/gravlens/2012WS/">lensmodel</a>, written by Chuck Keeton. You can install pygravlens through the linked GitHub page.
 
-To run this code, you will also need some common python packages:
+To run this code, you will need these common python packages:
 <ul>
   <li>numpy</li>
   <li>matplotlib</li>
