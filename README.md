@@ -1,6 +1,7 @@
 # paper-ruan-keeton-2023
 
-Code that compliments the paper: Ruan & Keeton 2023, meant to demonstrate how we generated mock lenses and implemented the lens modelling.
+Code that compliments the paper: Ruan & Keeton 2023 ("Statistical Bias in the Hubble Constant and Mass Power Law Slope for
+Mock Strong Lenses"), meant to demonstrate how we generated mock lenses and implemented the lens modelling.
 
 The mock lens systems are generated with <a href="https://github.com/chuckkeeton/pygravlens">pygravlens</a>, a python version of <a href="https://www.physics.rutgers.edu/~keeton/gravlens/2012WS/">lensmodel</a>, written by Chuck Keeton. You can install pygravlens through the linked GitHub page.
 
