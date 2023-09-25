@@ -1,4 +1,4 @@
-# paper-h-powlaw
+# paper-ruan-keeton-2023
 
 Code that compliments the paper: Ruan & Keeton 2023, meant to demonstrate how we generated mock lenses and implemented the lens modelling.
 
