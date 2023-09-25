@@ -18,4 +18,6 @@ To run this code, you will need these common python packages:
   <li> <a href="https://emcee.readthedocs.io/en/stable/">emcee</li>
 </ul>
 
-Mock lenses can just be generated through pygravlens alone (generate_mock_lenses.ipynb). The func_get_rel.py code simply outputs the relative time delays and annulus lengths for multiple lens systems from different .dat files. The MCMC analysis must be done using the likelihood functions defined in the semlinlens_v3.py file. The func_get_h_eta.py code takes the MCMC output and finds the median and errors (within the 68% confidence interval) for h and the power law slope.
+Mock lenses can just be generated through pygravlens alone (generate_mock_lenses.ipynb). The lens modelling (running MCMC, combining likelihoods) is done in one notebook (lens_modelling.ipynb).
+
+The func_get_rel_CK.py code simply outputs the relative time delays and annulus lengths for multiple lens systems from different .dat files. The MCMC analysis must be done using the likelihood functions defined in the semlinlens_v3.py file. The func_get_h_eta.py code takes the MCMC output and finds the median and errors (within the 68% confidence interval) for h and the power law slope. The func_combineh0.py code will combine the MCMC chains and use gaussian kernel density estimation for each h posterior, and then multiply these (given whatever selection of the data you request) for an overall h posterior.
